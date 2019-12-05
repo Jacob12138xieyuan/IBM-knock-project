@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IOT SOUND</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/audio.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- ****************  WATSON ACOUSTIC INSIGHTS SCORING *************** -->
+              <!-- <h3 style="text-align: center;">Acoustic Analytics:</h3><br> -->
+              <div>
+
+                <!-- Live Recording -->
+                
+                <h3>Audio Live Recording</h3>
+                <div id="controls">
+                  <button name="record" id="recordButton" class="recbtn">Record</button>
+                  
+                  
+                  <!-- <button id="pauseButton" class="recbtn" disabled>Pause</button>
+                  <button id="stopButton" class="recbtn" disabled>Stop</button> -->
+                </div>
+                <div id="formats">Format: start recording to see sample rate</div>
+                <h3>Recordings</h3>
+                <ol id="recordingsList"></ol>
+            </div>
+          </div>
+          <div class="col">
+              <canvas id="barChart"></canvas>
+          </div>
+        </div>
+      </div>
+    
+    
+    <hr>
+
+    <!-- ****************  WATSON ACOUSTIC INSIGHTS SCORING *************** -->
+    <div id="controls">
+      <h3>Watson Inspection Result:</h3>
+      <div id="showTable">
+        <h1 id="resultdisplay">
+        </h1>
+      </div>
+    </div>
+    <div id="controls">
+      <h4>Last update: </h4>
+      <blockquote id="datetime"></blockquote>
+    </div>
+      
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="/app/audio_recording.js"></script>
+    
+    
+</body>
+</html>  
